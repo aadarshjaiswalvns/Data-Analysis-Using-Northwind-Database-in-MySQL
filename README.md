@@ -61,3 +61,15 @@ This project simulates real-world business analysis for *Reliant Retail Ltd.*, a
 - Delivered actionable insights for marketing, inventory control, and logistics optimization.
 
 ---
+
+## 🙋‍♂️ Author
+
+**Aadarsh Jaiswal**  
+Data Analyst | Machine Learning Enthusiast  
+📧 [aadarshjaiswal.vns@gmail.com](mailto:aadarshjaiswal.vns@gmail.com)  
+🔗 [LinkedIn](https://linkedin.com/in/aadarsh-jaiswal)  
+💻 [GitHub](https://github.com/aadarshjaiswalvns)
+
+---
+
+> ⭐ *If you found this project helpful, give it a star and share feedback!*
