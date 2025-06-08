@@ -1,56 +1,63 @@
-🛍️ Reliant Retail Ltd. – MySQL Analytics Project
+# 🛍️ Reliant Retail Ltd. – MySQL Analytics Project
 
-📌 Project Overview
-This project was developed for Reliant Retail Ltd., a fictional chain of online retail stores, to support data-driven business decisions using SQL queries on a transactional orders database. The database includes customers, products, orders, inventory, shipments, and addresses.
+## 📌 Project Overview
+This project simulates real-world business analysis for *Reliant Retail Ltd.*, a fictional e-commerce company. Using a relational orders database, I answered 10 key business questions using advanced SQL techniques. The project covers customer segmentation, unsold product detection, inventory management, and logistics evaluation.
 
-Goal: Solve 10 analytical questions to deliver insights on customer segmentation, inventory health, logistics, and product performance.
+> **Goal:** Use MySQL to extract actionable insights from a multi-table transactional database to support data-driven decisions.
 
-🔧 Tools & Technologies
-SQL (MySQL)
+---
 
-Relational Database Design
+## 🧰 Tools & Technologies
+- **MySQL**
+- SQL Features Used: `JOIN`, `CASE`, `GROUP BY`, `HAVING`, `Subqueries`, `Aggregation`
+- Data Types: Orders, Customers, Products, Shipments, Inventory, Geography
 
-ER Model with 7+ Tables
+---
 
-Joins, CASE, Subqueries, GROUP BY, HAVING, Aggregates
+## 🧠 Business Questions Answered
 
-🧠 Key Business Questions Solved
-Customer Segmentation
-Categorized customers (A/B/C) based on account creation year and formatted names with gender-based titles.
+1. **Customer Segmentation**
+   - Classified customers as Category A/B/C based on their account creation year and gender (Mr./Ms.).
 
-Unsold Product Insights
-Identified unsold products, calculated inventory value, and applied dynamic discounts (10–20%) based on price tiers.
+2. **Unsold Products & Discount Logic**
+   - Identified unsold products and applied tiered discount logic (10%, 15%, 20%) based on price.
 
-Product Class Summary
-Aggregated inventory value per product class, filtered by classes with > ₹100,000 in stock value.
+3. **Inventory Value by Product Class**
+   - Computed inventory value for each product class and filtered those with value > ₹100,000.
 
-Customer Cancellations
-Found customers who cancelled all their orders using subqueries.
+4. **Order Cancellations**
+   - Retrieved customers who canceled *all* their orders using a subquery.
 
-Logistics Performance
-Evaluated Shipper DHL’s reach and performance by counting customers and consignments per city.
+5. **Shipper Logistics Performance**
+   - Evaluated Shipper “DHL” performance by city in terms of customer count and consignments delivered.
 
-Inventory Health Check
-Assessed inventory status (Low/Medium/Sufficient/No Sales) based on product category and quantity sold.
+6. **Inventory Health Status**
+   - Categorized products as having Low/Medium/Sufficient inventory or No Sales, based on sales data and category logic.
 
-Carton Fit Analysis
-Identified the largest order (by volume) that fits into a specific carton (carton_id = 10).
+7. **Carton Fit Volume Calculation**
+   - Identified the largest order (by volume) that fits in a specific carton (`carton_id = 10`).
 
-Cash Payment Analysis
-Analyzed total quantity and value of products bought via Cash, filtering customers whose last names begin with 'G'.
+8. **Cash Payment Product Analysis**
+   - Analyzed purchases by customers (whose last names start with "G") who paid in cash.
 
-Product Association (Market Basket)
-Retrieved products frequently sold with product_id = 201, excluding cities Bangalore and New Delhi.
+9. **Frequently Bought Together (Product ID 201)**
+   - Found products sold together with `product_id = 201` but not shipped to Bangalore or New Delhi.
 
-Order Filtering
-Listed even-numbered shipped orders not sent to PIN codes starting with ‘5’, including quantity metrics.
+10. **Order Filtering by Address**
+    - Listed even-numbered orders shipped to locations where the pincode does not start with '5'.
 
-📊 Sample ER Diagram (Simplified)
-Tables: ONLINE_CUSTOMER, ORDER_HEADER, ORDER_ITEMS, PRODUCT, PRODUCT_CLASS, SHIPPER, ADDRESS, CARTON
+---
 
-✅ Outcomes
-Demonstrated ability to write advanced SQL queries for real-world analytics scenarios.
+## 🧾 Sample ER Diagram (Simplified View)
+> _Note: This is a conceptual summary based on table usage._
+- **Tables Used:** `ONLINE_CUSTOMER`, `ORDER_HEADER`, `ORDER_ITEMS`, `PRODUCT`, `PRODUCT_CLASS`, `SHIPPER`, `ADDRESS`, `CARTON`
 
-Practiced data cleaning, logic-building, and performance-optimized querying.
+---
 
-Gained hands-on experience in inventory planning, customer behavior analysis, and delivery optimization.
+## 📈 Key Takeaways
+- Translated real-world business logic into efficient and maintainable SQL.
+- Built complex queries using layered `CASE`, nested subqueries, and multi-way joins.
+- Strengthened my skills in database design interpretation and relational data analysis.
+- Delivered actionable insights for marketing, inventory control, and logistics optimization.
+
+---
