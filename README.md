@@ -1,58 +1,56 @@
-# Data-Analysis-Using-Northwind-Database-in-MySQL
-A set of SQL queries and results showing real business insights like sales trends, customer behavior, and product performance.
+🛍️ Reliant Retail Ltd. – MySQL Analytics Project
 
-📌 Project Objective
+📌 Project Overview
+This project was developed for Reliant Retail Ltd., a fictional chain of online retail stores, to support data-driven business decisions using SQL queries on a transactional orders database. The database includes customers, products, orders, inventory, shipments, and addresses.
 
-To perform data exploration and extract business insights from the Northwind database using SQL queries.
+Goal: Solve 10 analytical questions to deliver insights on customer segmentation, inventory health, logistics, and product performance.
 
-🧰 Tools & Technologies
+🔧 Tools & Technologies
+SQL (MySQL)
 
-MySQL Workbench
+Relational Database Design
 
-Northwind Sample Database
+ER Model with 7+ Tables
 
-Excel or Power BI (for optional visualizations)
+Joins, CASE, Subqueries, GROUP BY, HAVING, Aggregates
 
-📂 Dataset
+🧠 Key Business Questions Solved
+Customer Segmentation
+Categorized customers (A/B/C) based on account creation year and formatted names with gender-based titles.
 
-Northwind Sample Database Simulates a small business with customers, orders, products, and employees.
+Unsold Product Insights
+Identified unsold products, calculated inventory value, and applied dynamic discounts (10–20%) based on price tiers.
 
-🔍 Key Queries & Goals
+Product Class Summary
+Aggregated inventory value per product class, filtered by classes with > ₹100,000 in stock value.
 
-Total Sales by Country
+Customer Cancellations
+Found customers who cancelled all their orders using subqueries.
 
-Top 5 Customers by Revenue
+Logistics Performance
+Evaluated Shipper DHL’s reach and performance by counting customers and consignments per city.
 
-Monthly Sales Trends
+Inventory Health Check
+Assessed inventory status (Low/Medium/Sufficient/No Sales) based on product category and quantity sold.
 
-Top-Selling Products
+Carton Fit Analysis
+Identified the largest order (by volume) that fits into a specific carton (carton_id = 10).
 
-Revenue by Employee
+Cash Payment Analysis
+Analyzed total quantity and value of products bought via Cash, filtering customers whose last names begin with 'G'.
 
-Sales by Product Category
+Product Association (Market Basket)
+Retrieved products frequently sold with product_id = 201, excluding cities Bangalore and New Delhi.
 
-📊 Insights
+Order Filtering
+Listed even-numbered shipped orders not sent to PIN codes starting with ‘5’, including quantity metrics.
 
-Identified top-performing countries and customers
+📊 Sample ER Diagram (Simplified)
+Tables: ONLINE_CUSTOMER, ORDER_HEADER, ORDER_ITEMS, PRODUCT, PRODUCT_CLASS, SHIPPER, ADDRESS, CARTON
 
-Analyzed monthly growth patterns
+✅ Outcomes
+Demonstrated ability to write advanced SQL queries for real-world analytics scenarios.
 
-Recognized products and categories contributing most to revenue
+Practiced data cleaning, logic-building, and performance-optimized querying.
 
-✅ Results
-
-Clean and reusable SQL queries
-
-Optional CSV exports and visualizations
-
-📁 Files
-
-northwind_sql_analysis_queries.sql – Query file
-northwind-data.sql - data file
-northwind.sql - Table file
-README.md – Project documentation
-
-🙋‍♂️ Author
-
-Aadarsh Jaiswal
-SQL Learner | Aspiring Business Analyst
+Gained hands-on experience in inventory planning, customer behavior analysis, and delivery optimization.
